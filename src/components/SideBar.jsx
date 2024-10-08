@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import '../css/SideBar.css';  // CSS tambahan jika diperlukan
 import logo from '../images/navLogo.png';  // Logo default
 import activeLogo from '../images/navActive.png'; 
-import Navbar from './NavBar';  // Import Navbar
 
 const navLinks = [
   { id: 'home-section', label: 'Home' },
   { id: 'overview-section', label: 'Overview' },
-  { id: 'section3', label: 'Services' },
-  { id: 'section4', label: 'Contact' },
+  { id: 'about-section', label: 'About' },
+  { id: 'galery-section', label: 'Galery' },
 ];
 
 const Sidebar = () => {
@@ -49,7 +48,7 @@ const NavLink = ({ id, label, activeSection }) => {
   const isActive = activeSection === id;
 
   return (
-    <a href={`#${id}`} className="nav-link d-flex align-items-center mb-3">
+    <a href={`#${id}`} className="nav-link d-flex align-items-center mb-3" data-aos="fade-right" data-aos-delay="1100">
       <img
         src={isActive ? activeLogo : logo}
         alt="Logo"

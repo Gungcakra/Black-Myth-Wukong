@@ -10,11 +10,12 @@ function OverView22() {
             
         </div>
         <div className="col colkanan2">
-        <h1 className="overview2-title">VAST VARIATION</h1>
-            <p className="overview2-desc">
+        <h1 className="overview2-title" data-aos="fade-up">VAST VARIATION</h1>
+            <p className="overview2-desc" data-aos="fade-up" data-aos-delay="500">
             Combine your <span>Spells and Abilities</span> for maximum impact. Tailor your Talents to fit your unique playstyle. Unleash your full potential and dominate the <span>Battlefield!</span>
             </p>
             <video className="overview2-video"
+            data-aos="fade-up" data-aos-delay="800"
         autoPlay
         loop
         muted 

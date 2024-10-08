@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Seibi';
+    src: url(../font/Seibi-Seireisho.otf);
+  }
+  @font-face {
+    font-family: 'Seibi-M';
+    src: url(../font/Seibi-Seireisho-Medium.otf);
+  }
+
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Menambahkan ini untuk vertical center */
+  }
+  
+  
+  .logo-img {
+    transition: transform 0.3s ease;
+    width: 50px;
+    margin-left: 100px;
+
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .nav-link:hover .link-text {
+    display: inline-block;
+  }
+  
+  .link-text {
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0; /* Sembunyikan teks dengan opasitas 0 */
+    transition: opacity 0.3s ease; /* Tambahkan transisi */
+    font-family: 'Seibi',sans-serif;
+  }
+  
+  .nav-link:hover .link-text {
+    opacity: 1; /* Tampilkan teks saat di-hover */
+  }
+  
+  .link-text.active {
+    opacity: 1; /* Tampilkan teks saat aktif */
+  }
+
+  
+  @media (max-width: 768px) {
+   
+     
+    .sidebar{
+        display: none;
+    }
+  }

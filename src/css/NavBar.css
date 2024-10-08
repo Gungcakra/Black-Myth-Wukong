@@ -1,0 +1,27 @@
+.navbar{
+    display: none;
+}
+.navbar-collapse {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #343a40; 
+    width: 100%; 
+}
+.navbar-brand{
+    font-family: 'Seibi',sans-serif;
+
+}
+.navbar-nav{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Seibi',sans-serif;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+    }
+}

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Algreya";
+  src: url(../font/Alegreya.ttf);
+}
+
+.overview-section{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/bg-overview.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-title{
+    font-size: 3.5rem;
+    margin-left: 300px;
+  color: #B7B7B7;
+  font-family: "Algreya",sans-serif;
+    
+
+}
+.colkiri{
+    position: relative; /* Membuat transformasi lebih efektif */
+  transition: transform 0.5s ease; 
+}
+.overview-desc {
+  width: 80%; 
+  font-size: 1.6rem;
+  margin-left: 300px;
+  color: #B7B7B7;
+  font-family: "Algreya",sans-serif;
+
+}
+  
+
+.overview-desc span{
+    color: rgb(189, 0, 0);
+}
+.overview-video{
+ max-width: 400px;
+ margin-left: 300px;
+ height: auto;
+
+}
+
+@media (max-width: 768px) {
+    .overview-section {
+        position: relative; /* Membuat posisi relatif untuk menempatkan overlay */
+        background-image: url(../images/bg-overviewPort.png);
+        background-size: cover; /* Menyusun gambar agar sesuai dengan ukuran elemen */
+        background-position: center; /* Mengatur posisi gambar */
+      }
+      
+      .overview-section::before {
+        content: ''; /* Membuat konten kosong untuk overlay */
+        position: absolute; /* Mengatur posisi overlay */
+        top: 0; /* Menempatkan overlay di atas */
+        left: 0; /* Menempatkan overlay di atas */
+        width: 100%; /* Lebar penuh overlay */
+        height: 100%; /* Tinggi penuh overlay */
+        background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi 50% */
+        z-index: 1; /* Pastikan overlay berada di atas gambar */
+      }
+      
+    .colkiri{
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+    }
+      .overview-title{
+        font-size: 2rem;
+        margin-left: 0;
+        color: white;
+    }
+    .overview-desc {
+      font-size: 1rem;
+      margin-left: 0;
+      text-align: center;
+      color: white;
+    }
+    .overview-desc span{
+        color: red;
+    }
+    .overview-video{
+      margin-left: 0;
+      max-width: 100%;
+      height: auto;
+    }
+    .colkanan{
+        display: none;
+    }
+
+  }

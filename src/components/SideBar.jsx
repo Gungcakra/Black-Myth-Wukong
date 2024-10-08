@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../css/Sidebar.css';  // CSS tambahan jika diperlukan
+import '../css/SideBar.css';  // CSS tambahan jika diperlukan
 import logo from '../images/navLogo.png';  // Logo default
 import activeLogo from '../images/navActive.png'; 
 import Navbar from './NavBar';  // Import Navbar

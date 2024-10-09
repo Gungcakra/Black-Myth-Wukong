@@ -28,13 +28,40 @@
     }
   }
 .logo{
-    max-width: 40rem;
-    height: auto;
+    max-width: 30rem;
+    height: 200px;
+}
+.overview-btn-title{
+  font-family: 'Seibi',sans-serif;
+  color: #B7B7B7;
+  font-size: 2rem;
+}
+@keyframes slide {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.overview-btn {
+  position: relative; 
+  animation: slide 1s ease-in-out infinite alternate; 
+  transition: 0.5s ease-in-out;
+}
+.overview-btn:hover{
+  filter: brightness(10);
+
+}
+.overview-btn:active {
+  border-color: transparent; /* Border menjadi transparan saat tombol diklik */
 }
 @media (max-width: 768px) {
    
      
     .logo{
         margin-top: 2rem;
+        height: 200px;
     }
   }

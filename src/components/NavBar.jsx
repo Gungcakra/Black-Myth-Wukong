@@ -4,8 +4,8 @@ import "../css/NavBar.css";
 const navLinks = [
   { id: 'home-section', label: 'Home' },
   { id: 'overview-section', label: 'Overview' },
-  { id: 'section3', label: 'Services' },
-  { id: 'section4', label: 'Contact' },
+  { id: 'section3', label: 'About' },
+  { id: 'section4', label: 'Galery' },
 ];
 
 const Navbar = () => {

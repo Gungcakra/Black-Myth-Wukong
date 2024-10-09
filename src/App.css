@@ -6,3 +6,29 @@
   font-family: 'Seibi-M';
   src: url(../font/Seibi-Seireisho-Medium.otf);
 }
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* Warna background scrollbar (hitam) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff; /* Warna scroll (putih) */
+  border-radius: 10px; /* Membuat scroll menjadi rounded */
+  border: 3px solid #000; /* Border agar ada jarak antara track dan scroll */
+}
+
+/* Untuk Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #000; /* scroll warna putih, track warna hitam */
+}
+
+/* Optional: styling untuk hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc; /* Warna scroll saat dihover */
+}

@@ -30,9 +30,12 @@
     text-decoration: none;
     width: 100%;
   }
-
+  
+  .nav-link img{
+    transition: 0.3s all;
+  }
   .nav-link:hover img{
-    filter: brightness(100px);
+    filter: brightness(2);
   }
   
   .nav-link:hover .link-text {

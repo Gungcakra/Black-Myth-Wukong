@@ -9,6 +9,7 @@ import OverView2 from './components/OverView2';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   const homeRef = useRef(null);
@@ -48,6 +49,7 @@ function App() {
       <Sidebar />
       <Navbar />
         <Home />
+        <About />
         <OverView />
         <OverView2 />
         <Footer />

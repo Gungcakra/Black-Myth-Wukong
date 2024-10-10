@@ -5,8 +5,8 @@ import activeLogo from '../images/navActive.png';
 
 const navLinks = [
   { id: 'home-section', label: 'Home' },
-  { id: 'overview-section', label: 'Overview' },
   { id: 'about-section', label: 'About' },
+  { id: 'overview-section', label: 'Overview' },
   { id: 'galery-section', label: 'Galery' },
 ];
 

@@ -32,8 +32,8 @@ function Home() {
         </div>
             <div className="col d-flex flex-column justify-content-end align-items-center overview-btn-group" style={{ height:'50%' }}>
               <div className="row">
-              <h3 className="text-center overview-btn-title">Overview</h3>
-              <a href="#overview-section" className='text-center overview-btn'>
+              <h3 className="text-center overview-btn-title">Explore</h3>
+              <a href="#about-section" className='text-center overview-btn'>
               <img src={btnOverview} alt="" className='mb-5' width={'100rem'}/>
 
               </a>

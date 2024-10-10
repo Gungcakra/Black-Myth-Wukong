@@ -3,8 +3,8 @@ import "../css/NavBar.css";
 
 const navLinks = [
   { id: 'home-section', label: 'Home' },
+  { id: 'about-section', label: 'About' },
   { id: 'overview-section', label: 'Overview' },
-  { id: 'section3', label: 'About' },
   { id: 'section4', label: 'Galery' },
 ];
 
